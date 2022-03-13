@@ -1,0 +1,467 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    font-family: "Ubuntu";
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+body section:nth-child(2),
+body section:nth-child(3),
+body section:nth-child(4),
+body section:nth-child(5){
+    margin-bottom: 20px;
+}
+
+section{
+    width: auto;
+    
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 140px;
+    background-color: rgba(255,255,255,.8);
+    align-items: center;
+}
+
+.navbar h1{
+    color: rgb(46, 78, 203);
+    width: 36%;
+    font-size: xx-large;
+    font-weight:bolder;
+    text-align: left;
+    margin-left: 2.7%;
+
+}
+.navbar ul{
+    width: 36%;
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li{
+    color: rgb(110, 124, 148);
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 8%;
+}
+
+.navbar ul li:hover{
+    color: rgb(46, 78, 203);
+}
+
+.primary-button{
+    background-color: rgb(46, 78, 203);
+    color: white;
+    width: 164px;
+    height: 48px;
+    font-size: large;
+    font-weight: 600;
+    font-stretch:ultra-expanded;
+    border-radius: 4px;
+    border-color: rgb(46, 78, 203);
+    box-shadow: 0 16px 12px -8px rgba(45, 77, 203, 0.5);
+}
+.primary-button:hover{
+    background-color: rgb(31, 62, 114);
+}
+
+.landing1{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    height: 800px;
+    background-image: url("./images/img1.png");
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.landing1-info,
+.landing2-info{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 50px;
+}
+.landing1-info{
+    padding-top: 280px;
+}
+
+.landing2-info,
+.contact{
+    margin-bottom: 100px;
+}
+
+.landing1-info div,
+.landing2-info div{
+    width: 60%;
+}
+
+.landing1-info h1,
+.landing2-info h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.landing1-info p,
+.landing2-info p{
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.landing1-info ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 160px;
+}
+
+.landing1-info h3{
+    margin-bottom: 20px;
+}
+
+.submit-info{
+    margin-left:10%;
+    width: 60%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 5%;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,.8);
+    box-shadow: 0 16px 12px -8px rgba(45, 77, 203, 0.5);
+    
+}
+
+.submit-info table {
+    width: 70%;
+}
+
+.submit-info table th{
+    text-align: left;
+}
+
+
+
+.submit-info button{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.sponsors{
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sponsors img{
+    height: 60%;
+    width: 12%;
+    filter: grayscale(100%);
+    opacity: .15;
+}
+
+.sponsors img:hover{
+    opacity: .35;
+}
+
+.cards
+{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card{
+    width: 16%;
+    height: 80%;
+    box-shadow: 0 16px 12px -8px rgba(45, 77, 203, 0.1);
+    padding-left: 20px;
+}
+
+.card img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(45, 77, 203, 0.1);
+    padding: 8px;
+    border-radius: 4px;
+    
+}
+
+.card h3{
+    width: 55%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.card p{
+    color: rgba(0,0,0,.5);
+    width: 80%;
+    text-align:justify;
+    font-size: small;
+    line-height: 1.6;
+}
+
+
+.card:hover{
+    box-shadow: 0 16px 12px -8px rgba(45, 77, 203, 0.5);
+}
+
+.preparations,
+.contact{
+    margin-top: 80px;
+    height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.preparations>div,
+.contact>div{
+    width: 45%;
+}
+
+
+.preparations-dropdown-item{
+    display: flex;
+}
+
+.content h1{
+    margin-bottom: 40px;
+}
+
+.content p{
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.preparations-dropdown-item{
+    width: 70%;
+    margin-left: 40px;
+    justify-content: left;
+}
+
+.preparations-dropdown-item img{
+    height: 20px;
+    width: 20px;
+    background-color: rgba(45, 77, 203, 0.1);
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+}
+
+.preparations-dropdown-item img:nth-child(1)
+{
+    height: 40px;
+    width: 40px;
+    
+}
+
+.preparations-dropdown-item h3{
+    width: 80%;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.preparations-dropdown-item img:nth-child(2)
+{
+    width: 10%;
+}
+
+.contact-cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.contact-card{
+    width: 40%;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,.05);
+    box-shadow: 0 16px 12px -8px rgba(45, 77, 203, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.contact-card-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-card-info div img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(45, 77, 203, 0.1);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.contact-card-info div:nth-child(1){
+    width: 30%;
+    margin-left: -20px;
+}
+.contact-card-info div:nth-child(2){
+    width: 50%;
+}
+
+.contact-card-info div h3{
+    font-size: medium;
+}
+.contact-card-info div p{
+    color: rgba(0,0,0,.5);
+    font-size: small;
+}
+
+.contact-button{
+    background-color: rgb(240, 245, 255);
+    color: black;
+    width: 80%;
+    height: 48px;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 4px;
+    border-color: rgb(240, 245, 255);
+    box-shadow:none;
+}
+
+.contact-button:hover{
+    background-color: rgb(46, 78, 203);
+    color: white;
+    border-color: rgb(46, 78, 203);
+    box-shadow: 0 12px 10px -8px rgba(45, 77, 203, 0.3);
+}
+
+
+.img-doctors{
+
+    height:max-content;
+    width: 70%;
+    
+}
+.doctor2{
+    justify-content: right;
+}
+
+.doctor3{
+    justify-content: left;
+}
+
+footer{
+    height: 300px;
+    width: 100%;
+    background-color:rgba(45, 77, 203, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content1{
+    display: flex;
+    width: 80%;
+    height: 70%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.footer-description{
+    width: 40%;
+    justify-content: left;
+}
+
+.footer-description p{
+    margin-top: 20px;
+    width: 30%;
+    font-size: small;
+    line-height: 1.6;
+    font-weight: bold;
+    color: rgba(0,0,0,.4);
+}
+
+.footer-table{
+    width: 40%;
+    justify-content: right;
+}
+
+
+.footer-table table tr th{
+    font-size: x-large;
+}
+
+.footer-table table tr th,
+.footer-table table tr td{
+    height: 40px;
+    width: 120px;
+    justify-content: left;
+    align-items: center;
+    
+}
+
+.footer-table table tr td{
+    color: rgba(0,0,0,.4);
+}
+
+.footer-terms{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.footer-terms h4{
+    color: rgba(0,0,0,.4);
+    width: 40%;
+}
+
+
+
+@media (max-width: 1200px){
+    .navbar ul{
+        display:none;
+    }
+    .hoax-buster{
+        display:none;
+    }
+    .landing1-info,
+    .landing2-info{
+        width: 100%;
+    }
+
+    .card{
+        width: 40%;
+    }
+
+    .img-doc{
+        display: none;
+    }
+
+    .contact-card{
+        width: 60%;
+    }
+}
